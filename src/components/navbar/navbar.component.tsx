@@ -28,7 +28,7 @@ export default function NavbarComponent() {
           <BiLeaf className="bg-[#13EC5B] text-black w-6 h-6" />
         </div>
 
-        <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-black">Arthur Thorner</h2>
+        <h2 className="hidden md:block text-md sm:text-lg md:text-xl lg:text-2xl font-black">Arthur Thorner</h2>
       </div>
 
       <div className="h-full flex flex-1 justify-end items-center">
