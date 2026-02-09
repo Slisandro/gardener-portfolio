@@ -47,7 +47,7 @@ export default function ServicesComponent() {
         Professional Services
       </h2>
 
-      <p className="text-gray-800 mx-auto lg:mx-0 text-center lg:text-left text-lg sm:text-xl md:text-2xl lg:text-3xl w-3/4 font-medium">
+      <p className="text-gray-800 mx-auto lg:mx-0 text-center lg:text-left text-lg sm:text-xl md:text-2xl lg:text-3xl w-full sm:w-3/4 font-medium">
         Discover the intersection of nature and architecture through my
         specialized design consultancy and international publications
       </p>
@@ -76,7 +76,7 @@ const ServiceItem = ({
 }) => (
   <div
     className="rounded-xl 
-      max-w-md
+      max-w-xs
       lg:max-w-sm
       mb-4
       shadow-xl 
