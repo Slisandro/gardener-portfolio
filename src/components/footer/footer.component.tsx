@@ -7,7 +7,7 @@ export default function FooterComponent() {
     <footer className="w-full py-8 lg:py-16 md:py-8 border-t border-[#babbba] flex items-start justify-center px-4 sm:px-8 md:px-16 lg:px-32 h-50 md:h-100 grid-cols-3 grid gap-4">
       <div className="col-span-1 h-full flex flex-col sm:gap-6 gap-2">
         <div className="flex items-center sm:gap-4">
-          <div className="mx-auto flex items-center justify-center bg-[#13EC5B] p-2 rounded-lg">
+          <div className="mx-auto sm:mx-0 flex items-center justify-center bg-[#13EC5B] p-2 rounded-lg">
             <BiLeaf className="bg-[#13EC5B] text-black w-4 h-4" />
           </div>
 
@@ -16,16 +16,16 @@ export default function FooterComponent() {
           </h2>
         </div>
 
-        <p className="text-center sm:mt-4 text-xs md:text-md lg:text-lg font-large">
+        <p className="text-center sm:text-left sm:mt-4 text-xs md:text-md lg:text-lg font-large">
           Redefining modern spaces through horticultural excellence. Serving the
           global community from my studio in the Costwolds.
         </p>
       </div>
       <div className="col-span-1 flex flex-col gap-2 h-full items-center flex-1">
-        <h2 className="text-md lg:text-xl font-black text-gray-400 sm:mb-10">
+        <h2 className="text-md lg:text-xl font-black text-gray-400 sm:mb-8">
           Navigation
         </h2>
-        <ul className="flex flex-col gap-2 sm:gap-4 justify-between">
+        <ul className="flex flex-col gap-0 sm:gap-4 justify-between">
           {[
             "Selected Projects",
             "Press & Media",
