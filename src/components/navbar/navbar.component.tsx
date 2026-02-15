@@ -15,6 +15,10 @@ const LINKS = [
     href: "/services",
   },
   {
+    title: "Book",
+    href: "/book",
+  },
+  {
     title: "Contact",
     href: "/contact",
   },
