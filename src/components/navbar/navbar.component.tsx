@@ -2,13 +2,13 @@ import { BiLeaf } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
 const LINKS = [
+  // {
+  //  title: "Home",
+  //  href: "/",
+  // },
   {
-    title: "Home",
-    href: "/",
-  },
-  {
-    title: "About",
-    href: "/about",
+    title: "Portfolio",
+    href: "/portfolio",
   },
   {
     title: "Services",
@@ -27,13 +27,13 @@ const LINKS = [
 export default function NavbarComponent() {
   return (
     <nav className="w-full px-2 sm:px-4 md:px-8 lg:px-16 py-4 border-b border-[#babbba] flex items-center justify-between gap-6">
-      <div className="w-max flex items-center justify-center gap-2 sm:gap-4">
+      <Link to="/" className="w-max flex items-center justify-center gap-2 sm:gap-4">
         <div className="flex items-center justify-center bg-[#13EC5B] p-2 rounded-lg">
           <BiLeaf className="bg-[#13EC5B] text-black w-6 h-6" />
         </div>
 
         <h2 className="hidden md:block text-md sm:text-lg md:text-xl lg:text-2xl font-black">Arthur Thorner</h2>
-      </div>
+      </Link>
 
       <div className="h-full flex flex-1 justify-end items-center">
         {LINKS.map((link) => (
