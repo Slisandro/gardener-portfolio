@@ -66,15 +66,15 @@ export default function PortfolioPage() {
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
 
   return (
-    <div className="flex flex-col gap-8 p-10">
+    <div className="flex flex-col gap-4 md:gap-8 px-2 py-4 md:py-10 md:px-10">
       <div className="flex flex-col gap-6">
-        <h3 className="text-6xl text-[#0F142A] font-black">Garden Projects</h3>
+        <h3 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-[#0F142A] font-black text-center md:text-left">Garden Projects</h3>
 
-        <div className="flex items-center justify-between">
-          <p className="text-sm md:text-lg font-[400] text-gray-700 leading-6">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 md:gap-0">
+          <p className="text-sm md:text-md lg:text-lg font-[400] text-gray-700 leading-6 text-center md:text-left">
             A curated collection of landspace designs that harmonize nature with
             modern
-            <br />
+            <br className="hidden md:block" />
             living, showcasing sustainable practices and aesthetic excellence.
           </p>
 
@@ -86,14 +86,15 @@ export default function PortfolioPage() {
 
       <div className="h-0.5 bg-[#F0F4F2] w-full" />
 
-      <div className="flex w-full gap-4">
+      <div className="flex w-full gap-2 md:gap-4 overflow-x-auto py-2 sm:pb-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
         {categories.map((category) => (
           <button
+            key={category}
             onClick={() => setSelectedCategory(category)}
             className={
               selectedCategory === category
-                ? "text-xs sm:text-sm md:text-md font-medium rounded-full shadow-md bg-[#13EC5B] px-4 sm:px-6 py-2"
-                : "text-xs sm:text-sm md:text-md font-medium rounded-full shadow-md bg-transparent px-4 sm:px-6 py-2"
+                ? "text-xs sm:text-sm md:text-md font-medium rounded-full shadow-md bg-[#13EC5B] px-4 sm:px-6 py-2 whitespace-nowrap"
+                : "text-xs sm:text-sm md:text-md font-medium rounded-full shadow-md bg-transparent px-4 sm:px-6 py-2 whitespace-nowrap"
             }
           >
             {category}
@@ -101,16 +102,17 @@ export default function PortfolioPage() {
         ))}
       </div>
 
+        
       <div className="h-0.5 bg-[#F0F4F2] w-full" />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-8 py-4">
         {PROJECTS.map((project) => (
           <CardProject {...project} key={project.id} />
         ))}
       </div>
 
-      <div className="relative h-100 bg-[#F0F4F2] w-full rounded-xl flex flex-col items-center gap-12 justify-center pt-10">
-        <p className="mx-auto w-2/3 text-center font-semibold text-6xl">
+      <div className="relative h-auto md:h-100 bg-[#F0F4F2] w-full rounded-xl flex flex-col items-center gap-6 md:gap-12 justify-center py-8 md:py-10">
+        <p className="mx-auto w-full md:w-2/3 text-center font-semibold text-2xl sm:text-4xl md:text-5xl lg:text-6xl">
           Ready to transform your space?
         </p>
 
