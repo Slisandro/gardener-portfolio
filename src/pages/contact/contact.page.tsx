@@ -12,7 +12,7 @@ export default function ContactPage () {
                 </div>
                 <div className="flex flex-col w-full gap-2">
                     <label className="font-medium text-sm sm:text-sm" htmlFor="message">Message</label>
-                    <textarea style={{ resize: "none" }} rows={3} resize={false} className="w-full border-1 border-gray-100 bg-gray-50 rounded-md px-2 py-1 text-sm" name="message" />
+                    <textarea style={{ resize: "none" }} rows={3} className="w-full border-1 border-gray-100 bg-gray-50 rounded-md px-2 py-1 text-sm" name="message" />
                 </div>
                 
 
